@@ -1,0 +1,33 @@
+.main-container{
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 6rem;
+    justify-content: space-between;
+}
+
+.main-container p{
+    color: white;
+    font-weight: bold;
+    line-height: 6rem;
+    margin-left: 5%;
+}
+
+.main-container .group-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.main-container .group-buttons button{
+    height: 4rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    padding: 4%;
+    border-radius: 15px;
+}
+
+.main-container .group-buttons button:hover{
+    width: 4rem;
+}

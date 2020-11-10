@@ -1,0 +1,15 @@
+.footer-container{
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-container img{
+    width: 6rem;
+    margin-left: 2rem;
+}

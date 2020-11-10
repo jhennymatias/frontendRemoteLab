@@ -1,0 +1,52 @@
+.main-student-container{
+    height: 100%;
+    width: 100%;
+}
+.main-student-container .main-student-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.main-student-container .main-student-content .content-left {
+    margin-left: 2%;
+    width: 50%; 
+}
+
+.main-student-container .main-student-content .content-left .terminal{
+    margin-top: 1rem;
+    background-color: black;
+    width: 60rem;
+    border-radius: 12px;
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bolder;
+}
+.main-student-container .main-student-content .content-left .camera{
+    background-color: blue;
+    width: 60rem;
+    border-radius: 12px;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bolder;
+}
+
+.main-student-container .main-student-content .content-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+.main-student-container .main-student-content .content-right button{
+    margin-top: 1rem;
+    width: 50rem;
+    height: 6rem;
+}
