@@ -2,15 +2,38 @@ import React from 'react';
 import Menu from '../../components/menu';
 import Footer from '../../components/footer';
 import './styles.css';
+import Webcam from '../../components/webcam';
 
 function Home() {
+
+    const [devices, setDevices] = React.useState([]);
+
+    const handleDevices = React.useCallback(
+        mediaDevices =>
+            setDevices(mediaDevices.filter(({ kind }) => kind === "videoinput")),
+        [setDevices]
+    );
+
+    React.useEffect(
+        () => {
+            navigator.mediaDevices.enumerateDevices().then(handleDevices);
+        },
+        [handleDevices]
+    );
     return (
         <div className="main-student-container">
             <Menu />
             <div className="main-student-content">
                 <div className="content-left">
                     <div className="camera">
-                        aqui camera
+                        <>
+                            {devices.map((device, key) => (
+                                <div className="webcam">
+                                    <Webcam audio={false} videoConstraints={{ deviceId: device.deviceId }} />   
+                                </div>
+
+                            ))}
+                        </>
                     </div>
                     <div className="terminal">
                         aqui terminal

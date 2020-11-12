@@ -26,16 +26,16 @@
     font-weight: bolder;
 }
 .main-student-container .main-student-content .content-left .camera{
-    background-color: blue;
+    background-color: gray;
     width: 60rem;
     border-radius: 12px;
-    height: 30rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color:white;
-    font-weight: bolder;
+    justify-content: center;
 }
+.main-student-container .main-student-content .content-left .camera .webcam video{
+        height: 30rem;
+    }
 
 .main-student-container .main-student-content .content-right{
     width: 50%;
